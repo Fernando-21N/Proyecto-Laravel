@@ -246,7 +246,7 @@
                               </div>
                           </div>
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutsupra">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutford">Reservar</a></div>
                           </div>
                       </div>
                   </div>
@@ -275,7 +275,7 @@
                           </div>
                           <!-- Product actions-->
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutlamborghini">Reservar</a></div>
                           </div>
                       </div>
                   </div>
@@ -305,7 +305,7 @@
                           </div>
                           <!-- Product actions-->
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutbuggatti">Reservar</a></div>
                           </div>
                       </div>
                   </div>
@@ -340,7 +340,7 @@
                           </div>
                           <!-- Product actions-->
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutaudi">Reservar</a></div>
                           </div>
                       </div>
                   </div>
@@ -350,7 +350,7 @@
                           <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Disponible</div>
                           <!-- Product image-->
                           <img class="card-img-top"  src="{{ asset('assets/landing/assets/img/the-fast-and-the-furious-toyota-supra-auction-three-quarters.jpg') }}" alt="..." />
-                                                      <!-- Product details-->
+                            <!-- Product details-->
                           <div class="card-body p-4">
                               <div class="text-center">
                                   <!-- Product name-->
@@ -367,7 +367,7 @@
                               </div>
                           </div>
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutsupra">Reservar</a></div>
                           </div>
                       </div>
                   </div>
@@ -395,7 +395,7 @@
                           </div>
                           <!-- Product actions-->
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutsubaru">Reservar</a></div>
                           </div>
                       </div>
                   </div>
@@ -424,7 +424,7 @@
                           </div>
                           <!-- Product actions-->
                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Reservar</a></div>
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutmclaren">Reservar</a></div>
                           </div>
                       </div>
                   </div>

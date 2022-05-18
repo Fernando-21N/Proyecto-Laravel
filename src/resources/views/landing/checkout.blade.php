@@ -52,16 +52,27 @@
         <div class="container" >
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h1>El sitio web perfecto para el amante de los coches </h1>
-            <h2 style="text-align: justify">Disfruta de todas las novedades de todo tipo de coches desde deportivos hasta clásicos y siente la adrenalina de la conducción</h2> 
+            <h1>FERRARI TESTARROSA </h1>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <img src="{{ asset('assets/landing/assets/img/Audi.png') }}" class="img-fluid" alt=""> 
+            <img src="{{ asset('assets/landing/assets/img/pngegg.png') }}" class="img-fluid" alt=""> 
             </div>
         
         </div>
 
     </section><!-- End Hero -->
+
+    <br><br>
+    <div class="container" data-aos="fade-left" data-aos-delay="100">
+                
+    <p class="fst-italic" style="text-align: justify">
+        El Ferrari Testarossa se presentó en 1984 como sucesor del 512 BBi. Este nuevo auto Ferrari impactó en el mundo entero tanto por sus prestaciones como por su singular diseño. Es uno de los diseños más influyentes entre los autos deportivos. Su marca en la historia es tan grande como la de muy pocos vehículos.
+        Testarossa mantenía la tradición de autos Ferrari tipo Berlinetta con motor ubicado centralmente detrás del piloto con 12 cilindros opuestos a 180 grados. Este tipo de motor recibe la denominación Boxer.La nueva generación de motores Boxer contaba con renovada tecnología de inyección de combustible y cuatro válvulas por cilindro. El mismo nombre del auto derivaba del motor, ya que en italiano “Testarossa” significa “tapas rojas”, en alusión a sus grandes tapas de cilindros pintadas en color rojo.
+        La base del Ferrari Testarossa era la misma del 512 BBi, aunque el nuevo auto Testarossa agregaba amortiguadores hidráulicos a los triángulos superpuestos del tren trasero. El motor era similar en concepto pero más avanzado, con mejor inyección de combustible y cuatro válvulas por cilindro.Disfruta de tener en tus manos una de las joyas clásicas más impresionantes de la historia del automovilismo.
+    
+    </p>  
+    </div>         
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">

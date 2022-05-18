@@ -1,13 +1,71 @@
 version: '3.7'
 services:
+  traefik:
+    image: "traefik:v2.5"
+    container_name: "traefik"
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    networks:
+      - laravel
+
+  whoami:
+    image: "traefik/whoami"
+    container_name: "whoami1"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+      - "traefik.http.routers.whoami.entrypoints=web"
+    networks:
+      - laravel
+
+  whoami2:
+    image: "traefik/whoami"
+    container_name: "whoami2"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+      - "traefik.http.routers.whoami.entrypoints=web"
+    networks:
+      - laravel
+
+  whoami3:
+    image: "traefik/whoami"
+    container_name: "whoami3"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+      - "traefik.http.routers.whoami.entrypoints=web"
+    networks:
+      - laravel
+
+  whoami4:
+    image: "traefik/whoami"
+    container_name: "whoami4"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+      - "traefik.http.routers.whoami.entrypoints=web"
+    networks:
+      - laravel
+
   nginx:
     image: nginx:stable-alpine
     container_name: nginx
     ports:
-      - 8081:80
+      - "80:80"
     volumes:
       - ./src:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    labels:
+      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
     depends_on:
       - php
       - mysql

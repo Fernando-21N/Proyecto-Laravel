@@ -12,8 +12,6 @@
   <!-- Favicons -->
   <link href="{{ asset('assets/landing/assets/img/favicon.png') }}" rel="icon">
   <link href="{{ asset('assets/landing/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
-
-  <link href="{{ asset('assets/css/main2.css') }}" rel="stylesheet" type="text/css">
   
   <!-- Vendor CSS Files -->
   <link href="{{ asset('assets/landing/assets/vendor/aos/aos.css') }}" rel="stylesheet">
@@ -24,8 +22,6 @@
   <link href="{{ asset('assets/landing/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/landing/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="{{ asset('assets/landing/assets/css/style.css') }}" rel="stylesheet">
 
   <!--====== Logo Icon ======-->
 
@@ -48,7 +44,7 @@
 <body>
 
     <HEAD>
-        <link href="{{ url('css/main2.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/main2.css') }}" rel="stylesheet" type="text/css">
     </HEAD>
 
     <!-- ======= Hero Section ======= -->
@@ -56,23 +52,33 @@
         <div class="container" >
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h1>El sitio web perfecto para el amante de los coches </h1>
-            <h2 style="text-align: justify">Disfruta de todas las novedades de todo tipo de coches desde deportivos hasta clásicos y siente la adrenalina de la conducción</h2> 
+            <h1>TOYOTA SUPRA </h1>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <img src="{{ asset('assets/landing/assets/img/Audi.png') }}" class="img-fluid" alt=""> 
+            <img src="{{ asset('assets/landing/assets/img/Toyota-Supra.png') }}" class="img-fluid" alt=""> 
             </div>
         
         </div>
-
+        
     </section><!-- End Hero -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+    <br><br>
+    <div class="container" data-aos="fade-left" data-aos-delay="100">
+                
+    <p class="fst-italic" style="text-align: justify">
+        Son muchos los automóviles que han formado parte de la exitosa saga de películas que conforman la familia Fast & Furious, pero quizás muchos entusiastas se queden con los de la primera entrega, ya sea el Mitsubishi Eclipse de Brian, el Mazda RX-7 o el incombustible Dodge Charger de Dom, el Nissan S14 de Letty o el Volkswagen Jetta de Jesse, entre otros. En esta lista también está cómo no el mítico Toyota Supra de Brian O'Conner, conducido por el famoso actor Paul Walker.  
+        Este ejemplar cuenta con su mecánica original, sin modificar. Hablamos de un motor turboalimentado de seis cilindros en línea y 3.0 litros ,el 2JZ-GTE, que desarrolla 325 caballos de potencia y un par máximo de 427 Nm, asociado a una caja de cambios automática de cuatro velocidades. No obstante, luce una palanca de cambios redonda de pequeño tamaño para que parezca una transmisión manual.El año pasado este Toyota Supra de 1994 alcanzó un precio de 550.000 dólares en la subasta celebrada en Estados Unidos por la casa Barret-Jackson, lo que le convierte en el Supra más caro de la historia.
+
+    </p>  
+    </div>
+      
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="/">CAR RENTING</a></h1>
-
+      
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -81,8 +87,8 @@
           <li><a class="nav-link scrollto" href="/#services">Servicios</a></li>
           <li class="dropdown"><a href="#"><span>Vehículos</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="/checkout">FERRARI TESTARROSA</a></li>
-              <li><a href="#alquilaa">FORD MUSTANG SHELBY GT500</a></li>
+              <li><a href="#alquilaa">FERRARI TESTARROSA</a></li>
+              <li><a href="/checkoutsupra">FORD MUSTANG SHELBY GT500</a></li>
               <li><a href="/#alquilaa">LAMBORGHINI CENTENARIO ROADSTER</a></li>
               <li><a href="/#alquilaa">BUGATTI VEYRON</a></li>
               <li><a href="/#alquilaa">AUDI R8</a></li>
@@ -96,7 +102,9 @@
 
 
     </div>
-  </header><!-- End Header -->
+    </header><!-- End Header -->
+  
+
     @if ($errors->any())
         <div class="alert alert-danger">
             <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -110,7 +118,7 @@
 
 
     <form action="{{ route('customer.store') }}" method="POST">
-        @csrf
+        @csrf    
         <section class="checkout-wrapper pt-50">
             <div class="container">
                 <div class="row justify-content-center">
@@ -239,12 +247,11 @@
                                         </div>
                                     </section>
                                 </li>
-
+ 
                                 
                             </ul>
                         </div>
                     </div>
-
                     <div class="col-lg-4">
                         <div class="checkout-sidebar pt-20">
                             <div class="checkout-sidebar-coupon mt-30">
@@ -263,11 +270,11 @@
                                 <div class="sub-total-price">
                                     <div class="total-price">
                                         <p class="value">Productos:</p>
-                                        <p class="price">910 €</p>
+                                        <p class="price">750 €</p>
                                     </div>
                                     <div class="total-price shipping">
                                         <p class="value">Fianza y Seguro:</p>
-                                        <p class="price">450 €</p>
+                                        <p class="price">500 €</p>
                                     </div>
                                     <div class="total-price discount">
                                         <p class="value">Descuento:</p>
@@ -277,7 +284,7 @@
                                 <div class="total-payable">
                                     <div class="payable-price">
                                         <p class="value">Importe Total:</p>
-                                        <p class="price">1.360 €</p>
+                                        <p class="price">1.250 €</p>
                                     </div>
                                 </div>
                                 <div class="checkout-sidebar-accordion mt-50">
@@ -297,11 +304,11 @@
                                                                     <td class="checkout-product">
                                                                         <div class="product-cart d-flex">
                                                                             <div class="product-thumb">
-                                                                                <img src="{{ asset('assets/landing/assets/img/shelby.jpg') }}"
+                                                                                <img src="{{ asset('assets/landing/assets/img/the-fast-and-the-furious-toyota-supra-auction-three-quarters.jpg') }}"
                                                                                     alt="Product">
                                                                             </div>
                                                                             <div class="product-content media-body">
-                                                                                <h5 class="title"><a href="#alquilaa">FORD MUSTANG SHELBY GT500</a></h5>
+                                                                                <h5 class="title"><a href="#alquilaa">TOYOTA SUPRA</a></h5>
                                                                                 <ul>
                                                                                     <li><span>Eco</span></li>
                                                                                     <li><span>Gr</span></li>
@@ -311,7 +318,7 @@
                                                                         </div>
                                                                     </td>
                                                                     <td class="checkout-price">
-                                                                        <p class="price">910€</p>
+                                                                        <p class="price">750€</p>
                                                                     </td>
                                                                 </tr>
                                                                 
@@ -322,7 +329,7 @@
                                                         <div class="sub-total-price">
                                                             <div class="total-price">
                                                                 <p class="value">Total:</p>
-                                                                <p class="price">1.360€</p>
+                                                                <p class="price">1.250€</p>
                                                             </div>
                                     
                                                             <div class="total-price discount">
@@ -333,7 +340,7 @@
                                                         <div class="total-payable">
                                                             <div class="payable-price">
                                                                 <p class="value">Resumen:</p>
-                                                                <p class="price">1.360€</p>
+                                                                <p class="price">1.250€</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -350,6 +357,7 @@
                 </div>
             </div>
         </section>
+    
     </form>
 
 
