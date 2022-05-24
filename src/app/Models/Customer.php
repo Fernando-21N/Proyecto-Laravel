@@ -14,4 +14,9 @@ class Customer extends Model
         'nombre','apellidos', 'email', 'numero', 'direccion', 'ciudad', 'codigopostal', 'pais', 'municipio', 'titular_tarjeta', 'numero_tarjeta', 'mes_expiracion_tarjeta', 'anho_expiracion_tarjeta', 'cvv'
     ];
 
+    //Relación one to many
+    public function cars(){
+        return $this->hasMany('App\Models\cars');
+    }
+
 }
