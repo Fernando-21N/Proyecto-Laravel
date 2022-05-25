@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
@@ -178,7 +179,7 @@
   <!-- Template Main JS File -->
   <script src="{{ asset('assets/landing/assets/js/main.js') }}"></script>
 
-  
+  @include('cookieConsent::index')
 
 
 

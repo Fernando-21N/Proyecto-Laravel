@@ -98,6 +98,25 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+
+/*--------------------------------------------------------------
+# Cookies
+--------------------------------------------------------------*/
+
+.js-cookieConsent::index{
+  position: absolute;
+  top: 0px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fffbdb;
+  border-color: #fffacc;
+  border: solid 1px;
+}
+
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0c8996db5ac6351d46f823bfe994afd50cda79ac',
+        'reference' => 'd8711c2114d655f78a308532a9b33fbf838afdaf',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -404,12 +404,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0c8996db5ac6351d46f823bfe994afd50cda79ac',
+            'reference' => 'd8711c2114d655f78a308532a9b33fbf838afdaf',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -1005,6 +1005,15 @@
             'install_path' => __DIR__ . '/../spatie/laravel-backup',
             'aliases' => array(),
             'reference' => '332fae80b12cacb9e4161824ba195d984b28c8fb',
+            'dev_requirement' => false,
+        ),
+        'spatie/laravel-cookie-consent' => array(
+            'pretty_version' => '2.12.13',
+            'version' => '2.12.13.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-cookie-consent',
+            'aliases' => array(),
+            'reference' => '8e93b9efee3a68960e5c832f937170c2fc0b2f37',
             'dev_requirement' => false,
         ),
         'spatie/temporary-directory' => array(
