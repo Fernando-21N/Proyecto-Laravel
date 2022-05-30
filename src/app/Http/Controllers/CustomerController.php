@@ -61,8 +61,6 @@ class CustomerController extends Controller
             'anho_expiracion_tarjeta'=> $request->get('txtAnhoExpiracionT'),
             'cvv'=> $request->get('txtCvvT')
         ]);
- 
-        
 
         $customer->save();
         return redirect('/')->with('success', 'Customer has been added');
